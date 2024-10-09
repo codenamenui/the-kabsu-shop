@@ -10,10 +10,10 @@ const Home = async () => {
         <div>
             {profile && (
                 <div>
-                    {profile.stud_fname} {profile.stud_lname} <br />
-                    {profile.stud_college} <br />
-                    {profile.stud_program} <br />
-                    {profile.stud_year}
+                    {profile.fname} {profile.lname} <br />
+                    {profile.college} <br />
+                    {profile.program} <br />
+                    {profile.year}
                 </div>
             )}
             <br />

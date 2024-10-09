@@ -20,14 +20,14 @@ export const createProfile = async (formData: FormData) => {
             .from("tbl_student")
             .update({
                 stud_number: stud_number,
-                stud_fname: stud_fname,
-                stud_lname: stud_lname,
-                stud_college: colleges.at(parseInt(stud_college as string) - 1)
+                fname: stud_fname,
+                lname: stud_lname,
+                college: colleges.at(parseInt(stud_college as string) - 1)
                     ?.name,
-                stud_program: stud_program,
-                stud_year: stud_year,
+                program: stud_program,
+                year: stud_year,
             })
-            .eq("stud_id", data?.user?.id)
+            .eq("id", data?.user?.id)
             .select();
         if (error) {
             console.error("Error updating profile:", error.message);
