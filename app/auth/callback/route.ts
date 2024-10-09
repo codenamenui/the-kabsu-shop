@@ -14,5 +14,5 @@ export async function GET(request: Request) {
         await supabase.auth.exchangeCodeForSession(code);
     }
 
-    return NextResponse.redirect("http://localhost:3000/home");
+    return NextResponse.redirect("http://localhost:3000/new-profile");
 }
