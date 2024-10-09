@@ -1,5 +1,11 @@
+import Link from "next/link";
+
 const Home = async () => {
-    return <div>Home</div>;
+    return (
+        <div>
+            <Link href="/login">LOGIN</Link>
+        </div>
+    );
 };
 
 export default Home;
